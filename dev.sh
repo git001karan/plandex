@@ -6,9 +6,18 @@ terminate() {
   kill -TERM "$pid2" 2>/dev/null
 }
 
+
+
+
 trap terminate SIGTERM SIGINT
 
+
+
+
+
 cd app
+
+
 
 (cd cli && ./dev.sh)
 
